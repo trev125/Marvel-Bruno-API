@@ -1,0 +1,17 @@
+meta {
+  name: Get character
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{base_url}}/characters/{{iron_man_id}}?apikey={{public_key}}&hash={{hash}}&ts={{ts}}
+  body: none
+  auth: none
+}
+
+params:query {
+  apikey: {{public_key}}
+  hash: {{hash}}
+  ts: {{ts}}
+}

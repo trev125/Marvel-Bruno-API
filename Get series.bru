@@ -1,0 +1,17 @@
+meta {
+  name: Get series
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://gateway.marvel.com/v1/public/series/3620?apikey={{public_key}}&hash={{hash}}&ts={{ts}}
+  body: none
+  auth: none
+}
+
+params:query {
+  apikey: {{public_key}}
+  hash: {{hash}}
+  ts: {{ts}}
+}
